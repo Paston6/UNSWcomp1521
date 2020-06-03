@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0062)https://cgi.cse.unsw.edu.au/~cs1521/18s1/labs/week10/index.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>COMP1521 18s1 - Week 10 Lab Exercise</title>
+<link rel="stylesheet" type="text/css" href="./COMP1521 18s1 - Week 10 Lab Exercise_files/course.css"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div>
+<div align="center">
+<table width="100%" border="0">
+<tbody><tr valign="top">
+<td align="left" width="25%">
+  <span class="tiny"><a href="https://www.cse.unsw.edu.au/~cs1521/18s1/index.php">COMP1521 18s1</a></span>
+</td>
+<td align="center" width="50%">
+  <span class="heading">Week 10 Lab Exercise</span><br>
+  <span class="subheading">A Simple Shell</span>
+</td>
+<td align="right" width="25%">
+  <span class="tiny"><a href="https://www.cse.unsw.edu.au/~cs1521/18s1/index.php">Computer System Fundamentals</a></span>
+</td>
+</tr></tbody></table>
+</div>
+<h2>Objectives</h2>
+<ul>
+<li> to explore Linux process manipulation system calls
+</li><li> to further explore string manipulation in C
+</li><li> to build a very simple command-line interpreter
+</li></ul>
+
+<h2>Admin</h2>
+<table border="0" cellpadding="4">
+<tbody><tr><td><b>Grades</b></td><td>A+=outstanding, A=very good, B=adequate, C=sub-standard, D=hopeless</td></tr>
+<tr><td><b>Demo</b></td><td>in the Week10 Lab or at the start of the <b>Week12</b> Lab <small>(Week 11 is the Practice Exam)</small></td></tr>
+<tr><td><b>Submit</b></td><td><tt>give cs1521 lab10 mysh.c</tt> &nbsp; or via WebCMS</td></tr>
+<tr><td><b>Deadline</b></td><td>must be submitted by 11:59pm Sunday 13 May</td></tr>
+</tbody></table>
+<p><small>
+Note: you need to do something <i>truly</i> outstanding, above and beyond
+the "call of duty" to get A+.
+Doing the exercise well and correctly as specified will get you an A grade.
+An A grade gets you full marks; an A+ grade gives a small bonus.
+</small></p>
+
+<h2>Background</h2>
+<p>
+Every time you use the CSE workstations you interact with the Linux shell
+(<tt>bash</tt>).
+The shell is a program that reads command lines and executes them.
+Each "command line" contains the name of a program, along with
+command-line arguments that are passed to this program.
+Examples:
+</p>
+<pre>ls -l           <span class="comment"># displays files in current directory</span>
+cat -n mysh.c   <span class="comment"># show mysh.c with line numbers</span>
+file mysh.c     <span class="comment"># show the file type of mysh.c</span>
+wc -l Makefile  <span class="comment"># show how many lines in the Makefile</span>
+/bin/ls -l      <span class="comment"># displays files in current directory</span>
+</pre>
+<p>
+Note the difference between the first and last commands.
+They actually produce exactly the same result, but the
+last command uses the full name of the <tt>ls</tt> command
+while the first one doesn't. You don't need to type the full
+name of each command because the shell keeps, in the
+<tt>PATH</tt> environment variable, a list of directories
+where it should look for executable commands.
+</p>
+
+<h2>Setting Up</h2>
+<p>
+Create a directory for this lab; let's call it <i>Lab10Dir</i>.
+</p>
+<p>
+Change into your <i>Lab10Dir</i> directory and run the following command:
+</p>
+<pre>$ <b>unzip <a href="https://www.cse.unsw.edu.au/~cs1521/18s1/labs/week10/lab10.zip">/home/cs1521/web/18s1/labs/week10/lab10.zip</a></b>
+</pre>
+<p>
+If you're working at home, download <tt>lab.zip</tt> by right-clicking on the above link
+and then run the above command on your local machine.
+</p>
+<p>
+If you've done the above correctly, you should now find the following files in the directory:
+</p>
+<table border="0" cellpadding="4">
+<tbody><tr><td><tt>mysh.c</tt></td><td>a very very simple shell program</td></tr>
+<tr><td><tt>Makefile</tt></td><td>compiles the <tt>mysh</tt> program</td></tr>
+</tbody></table>
+<p>
+Note that, as supplied, the program will not compile.
+You will need to add some code before this happens.
+</p>
+<p>
+To make your task simpler, we have supplied a tokeniser that can be
+used to break a string into components using a token separator(s).
+The examples below show how the function behaves. You might profit from
+reading how the function works internally.
+Note that it uses <tt>malloc()</tt> and <tt>strdup()</tt> to create
+its structures. These need to be freed at an appropriate time to
+avoid memory leaks.
+</p>
+<center><img src="./COMP1521 18s1 - Week 10 Lab Exercise_files/tokenise.png"></center>
+
+<h2>Exercise</h2>
+<p>
+You have several tasks for this lab exercise:
+</p><ol>
+<li>
+<p></p>
+<p>
+Implement the core part of the body of <tt>main()</tt>
+</p>
+<p>
+This requires the shell to:
+</p><ul>
+<li> tokenise the command line </li>
+<li> fork a copy of itself </li>
+<li> the parent shell process then waits for the child to complete </li>
+<li> the child shell process invokes the <tt>execute()</tt> function</li>
+<li> the parent shell process then cleans up the tokens and prints another prompt</li>
+</ul>
+<p>
+The arguments to <tt>execute()</tt> are: the command line string,
+the array of path directory strings, and the environment array.
+</p>
+</li>
+<li>
+<p>
+Implement the <tt>execute()</tt> function
+</p>
+<p>
+The execute function behaves as follows:
+</p>
+<pre>args = tokenise the command line
+if (args[0] starts with '/' or '.') {
+   check if the file called args[0] is executable
+   if so, use args[0] as the command
+else {
+   for each of the directories D in the path {
+      see if an executable file called "D/args[0]" exists
+      if it does, use that file name as the command
+   }
+}
+if (no executable file found)
+   print Command not found message
+else {
+   print the full name of the command being executed
+   use execve() to attempt to run the command with args and envp
+   if doesn't run, perror("Exec failed")
+}
+exit the child process <span class="comment">(since execute() is not supposed to return)</span>
+</pre>
+<p>
+You can use the <tt>isExecutable()</tt> function to check whether
+a given file name is executable.
+</p>
+<p>
+Note that this approach is not used in real shells because there
+is a <i>race condition</i> where the executable file may have its
+status changed (made non-executable) or even be removed between
+you checking its status and then attempting to execute it.
+There are other functions that you can use (see <tt>man 3 exec</tt>)
+to do this more reliably.
+However, the point of this lab is to let you explicitly see the kind
+of processes that the shell carries out when executing commands.
+</p>
+</li>
+</ol>
+<p>
+When your program is working correctly (and after you've switched <tt>DBUG</tt>
+off) it should look like:
+</p>
+<pre>$ <b>./mysh</b>
+mysh$ <b>ls -l</b>
+Executing /bin/ls
+total 28
+-rw-r--r-- 1 jas jas   140 Oct  8 11:49 Makefile
+-rwxr-xr-x 1 jas jas 12288 Oct  8 11:49 mysh
+-rw-r--r-- 1 jas jas  3832 Oct  8 11:48 mysh.c
+mysh$ <b>wc -l mysh.c</b>
+Executing /usr/bin/wc
+148 mysh.c
+mysh$ <b>dud command with many args</b>
+dud: Command not found
+mysh$ <b>cp mysh.c xyz</b>
+Executing /bin/cp
+mysh$ <b>ls -l</b>
+Executing /bin/ls
+total 32
+-rw-r--r-- 1 jas jas   140 Oct  8 11:49 Makefile
+-rwxr-xr-x 1 jas jas 12288 Oct  8 11:49 mysh
+-rw-r--r-- 1 jas jas  3832 Oct  8 11:48 mysh.c
+-rw-r--r-- 1 jas jas  3832 Oct  8 11:50 xyz
+mysh$ <b>^D</b>
+$ <span class="comment">... back to the real shell</span>
+</pre>
+<p>
+Obviously the file sizes, dates and user and group will be
+different for you.
+</p>
+<p>
+Note that some commands won't work the same in <tt>mysh</tt> as
+they do in the regular shell. Try to find some of these, discuss
+with your lab partner why the difference exists, and then explain
+it to your lab demonstrator.
+</p>
+
+
+<h2>Challenges</h2>
+<p>
+Add pipelines to your shell (e.g. commands like <tt>ls -l /usr/bin <span class="red">|</span> less</tt>).
+</p>
+
+<h2>Submission</h2>
+<p>
+You need to submit the file: <tt>mysh.c</tt>.
+You can submit this via the command line using <tt>give</tt> or you can
+submit it from within WebCMS. After submitting the code, show your tutor,
+who'll give you feedback on your work and award a grade.
+</p>
+<p>
+Have fun, <i>jas</i>
+</p>
+
+
+<script type="text/javascript" src="./COMP1521 18s1 - Week 10 Lab Exercise_files/MathJax.js"></script><script id="texAllTheThingsPageScript" type="text/javascript" src="chrome-extension://cbimabofgmfdkicghcadidpemeenbffn/js/pageScript.js" inlinemath="[[&quot;$&quot;,&quot;$&quot;],[&quot;[;&quot;,&quot;;]&quot;]]" displaymath="[[&quot;$$&quot;,&quot;$$&quot;],[&quot;\\[&quot;,&quot;\\]&quot;]]"></script></body></html>
